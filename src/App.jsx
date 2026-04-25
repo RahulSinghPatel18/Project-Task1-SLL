@@ -7,7 +7,8 @@ import Navbar from './components/Navbar';
 import Zustand from './store/Zustand';
 import CRUD from './CRUD/Task2';
 import { Toaster } from "react-hot-toast";
-
+import TodoList from './pages/TodoList';
+import Gsap from "./pages/Gsap"
 
 const App = () => {
   const PrivateRoute = ({children}) => {
@@ -42,6 +43,8 @@ const App = () => {
             } />
             <Route path='/zustand' element={<Zustand />} />
             <Route path='/crud' element={<CRUD />} />
+            <Route path='/todos' element={<TodoList />} />
+            <Route path='/gsap' element={<Gsap />} />
           </Route>
         </Routes>
       </BrowserRouter>
