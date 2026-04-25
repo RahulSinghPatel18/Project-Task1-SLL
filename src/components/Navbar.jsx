@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link, useNavigate } from 'react-router-dom'
+import CRUD from '../CRUD/Task2'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = React.useState(false)
@@ -12,9 +13,9 @@ const Navbar = () => {
   }
 
   const menuItems = [
-    { name: 'Home', path: '/' },
     { name: 'Dashboard', path: '/dashboard' },
     { name: 'Zustand', path: '/zustand' },
+    { name: 'CRUD', path: '/crud' },
     { name: 'Logout', onClick: handlelogout } // Special logout item
   ]
 

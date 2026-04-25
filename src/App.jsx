@@ -5,6 +5,8 @@ import Signup from './pages/Signup';
 import Dashboard from './pages/Dashboard';
 import Navbar from './components/Navbar';
 import Zustand from './store/Zustand';
+import CRUD from './CRUD/Task2';
+import { Toaster } from "react-hot-toast";
 
 
 const App = () => {
@@ -39,9 +41,11 @@ const App = () => {
               </PrivateRoute>
             } />
             <Route path='/zustand' element={<Zustand />} />
+            <Route path='/crud' element={<CRUD />} />
           </Route>
         </Routes>
       </BrowserRouter>
+      <Toaster position="top-center" />
     </div>
   )
 }
