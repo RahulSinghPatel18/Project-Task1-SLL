@@ -14,6 +14,7 @@ export default function GsapPage() {
         opacity: 0,
         duration: 1,
         stagger: 0.3,
+        ease: "bounce"
       });
 
       // About Section Animation
@@ -22,6 +23,7 @@ export default function GsapPage() {
         opacity: 0,
         duration: 1,
         stagger: 0.3,
+         ease: "bounce",
         scrollTrigger: {
           trigger: ".about-section",
           start: "top 40%",
@@ -35,6 +37,7 @@ export default function GsapPage() {
           scale: 0.8,
           duration: 1,
           delay:1,
+           ease: "linear",
           stagger: 0.8,
           scrollTrigger: {
             trigger: ".card-section",
@@ -110,7 +113,7 @@ export default function GsapPage() {
      </section>
 
      {/* SERVICES */}
-     <section className="py-20 text-center bg-gray-100 card-section">
+     <section className="py-20 text-center bg-gray-800 card-section">
        <h2 className="mb-12 text-4xl font-bold card-item">
          Our Services
        </h2>
